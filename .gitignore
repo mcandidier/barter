@@ -1,3 +1,6 @@
 *.pyc
 __pycache__/
+images/
+requests_images/
+
 *.sqlite3

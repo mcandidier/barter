@@ -32,6 +32,9 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     #internal apps
+    'account.apps.AccountConfig',
+    'trade.apps.TradeConfig',
+    
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -41,7 +44,6 @@ INSTALLED_APPS = [
 
     #external apps 
     'social_django',
-    'account',
 
 ]
 
