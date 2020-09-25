@@ -34,7 +34,7 @@ INSTALLED_APPS = [
     #internal apps
     'account.apps.AccountConfig',
     'trade.apps.TradeConfig',
-    
+
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -137,8 +137,8 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 
-SOCIAL_AUTH_FACEBOOK_KEY = '2741773999475471'
-SOCIAL_AUTH_FACEBOOK_SECRET ='107ba8e4f558d32b8ae8d971cd246c3f'
+SOCIAL_AUTH_FACEBOOK_KEY = ''
+SOCIAL_AUTH_FACEBOOK_SECRET =''
 SOCIAL_AUTH_FACEBOOK_SCOPE = ['email', 'user_link'] # add this
 SOCIAL_AUTH_FACEBOOK_PROFILE_EXTRA_PARAMS = {       # add this
   'fields': 'id, name, email, picture.type(large), link'
@@ -154,4 +154,9 @@ SOCIAL_AUTH_FACEBOOK_EXTRA_DATA = [
 LOGIN_REDIRECT_URL = 'home'
 # LOGOUT_URL = ''
 LOGOUT_REDIRECT_URL = 'home'
+
+try:
+    from local_settings import *
+except ImportError:
+    pass
 

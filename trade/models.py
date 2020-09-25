@@ -37,15 +37,17 @@ class Trade(models.Model):
     def __str__(self):
         return f'{self.name}'
 
+
 def upload_to(self):
     return 
+
+
 class Photos(models.Model):
     """ Trade item images
     """
 
     image = models.ImageField(upload_to='images/')
     timestamp = models.DateTimeField(auto_now_add=True)
-
 
     class Meta:
         verbose_name_plural = 'Photos'
