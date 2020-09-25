@@ -2,5 +2,6 @@
 __pycache__/
 images/
 requests_images/
+local_settings.py
 
 *.sqlite3
