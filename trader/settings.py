@@ -44,7 +44,8 @@ INSTALLED_APPS = [
 
     #external apps 
     'social_django',
-
+    'rest_framework',
+    'rest_framework.authtoken',
 ]
 
 MIDDLEWARE = [
